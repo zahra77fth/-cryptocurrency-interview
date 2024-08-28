@@ -1,4 +1,3 @@
-// src/lib/getQueryClient.ts
 import { QueryClient } from 'react-query';
 
 let queryClient: QueryClient | null = null;

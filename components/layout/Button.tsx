@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
     const baseStyles = 'font-semibold rounded';
 
     const variantStyles = {
-        primary: 'bg-[--primary] text-white hover:bg-[--primary-hover]',
+        primary: 'bg-[--primary] text-white hover:bg-[#2b7750]',
         secondary: 'bg-gray-500 text-white hover:bg-gray-600',
         danger: 'bg-red-500 text-white hover:bg-red-600',
     };

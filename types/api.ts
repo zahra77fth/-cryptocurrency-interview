@@ -27,7 +27,6 @@ export interface OrderType {
 
 export interface OrderApiResponse {
     orders: Order[];
-    // any other fields in the API response
 }
 
 

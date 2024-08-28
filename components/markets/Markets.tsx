@@ -8,6 +8,7 @@ import Button from "@/components/layout/Button";
 import Link from "next/link";
 import Table from "@/components/layout/Table";
 import Image from "next/image";
+import {numberFormatter} from "@/utils/formatters";
 
 type TabSwitcherProps = {
     data: Data[];
@@ -59,7 +60,7 @@ const Markets: React.FC<TabSwitcherProps> = ({ data }) => {
                 </div>
             ),
         },
-        {header: 'قیمت', accessor: (row: Data) => row.price},
+        {header: 'قیمت', accessor: (row: Data) => numberFormatter(Number(row.price), activeTab=== 'IRT' ? Number(row.currency1.decimal_irt) : Number(row.currency1.decimal))},
         {
             header: 'خرید / فروش',
             accessor: (row: Data) => (
@@ -96,9 +97,9 @@ const Markets: React.FC<TabSwitcherProps> = ({ data }) => {
                             onClick={() => handlePageChange(currentPage - 1)}
                             disabled={currentPage === 1}
                         >
-                            &#9664; Previous
+                            &#9654;قبل
                         </button>
-                        <span className={styles.pageInfo}>
+                        <span className="text-[--text-color]">
                             Page {currentPage} of {totalPages}
                         </span>
                         <button
@@ -106,7 +107,7 @@ const Markets: React.FC<TabSwitcherProps> = ({ data }) => {
                             onClick={() => handlePageChange(currentPage + 1)}
                             disabled={currentPage === totalPages}
                         >
-                            Next &#9654;
+                            بعد &#9664;
                         </button>
                     </div>
                 </div>

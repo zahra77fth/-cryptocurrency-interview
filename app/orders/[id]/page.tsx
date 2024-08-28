@@ -21,7 +21,7 @@ const Order: React.FC = () => {
                     setActiveTab(id);
                 }}
             />
-            <OrderList type={activeTab} />
+            <OrderList type={activeTab as "transaction" | "buy" | "sell"} />
         </div>
     );
 };
