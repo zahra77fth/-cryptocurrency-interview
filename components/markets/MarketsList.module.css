@@ -1,0 +1,49 @@
+/* src/components/MarketsList.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px; /* Optional: limit the max width of the list */
+}
+
+.paginationControls {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.paginationButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.paginationButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.paginationButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pageInfo {
+    font-size: 16px;
+    margin: 0 10px;
+    color: #333333;
+}

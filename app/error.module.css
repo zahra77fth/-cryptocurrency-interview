@@ -1,0 +1,57 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better contrast */
+    z-index: 9999;
+}
+
+.errorContainer {
+    text-align: center;
+    background: #fff; /* White background for contrast */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.errorIcon {
+    font-size: 4rem;
+    color: #e74c3c; /* Red color for the error icon */
+}
+
+.errorTitle {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #333; /* Dark color for the title */
+}
+
+.errorMessage {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #555; /* Medium gray color for the message */
+}
+
+.refreshButton {
+    background-color: #3498db; /* Blue background for the button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.refreshButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.refreshButton:focus {
+    outline: none;
+}

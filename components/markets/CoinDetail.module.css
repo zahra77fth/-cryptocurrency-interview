@@ -1,0 +1,66 @@
+/* src/pages/coin/CoinDetail.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    flex: 1;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.tabs button.activeTab {
+    background: #ddd;
+    border-bottom: 2px solid #0070f3;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Additional styling for the calculated values */
+.calculatedValues {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.calculatedValues p {
+    font-size: 18px;
+    margin: 5px 0;
+}
