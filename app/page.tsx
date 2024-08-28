@@ -25,8 +25,8 @@ const HomePage = async () => {
     }
 
     return (
-        <div className="w-full py-4 px-40">
-            <Markets data={data.results} /> {/* Pass data as props to Markets */}
+        <div className="w-full py-4 md:px-40">
+            <Markets data={data.results} />
         </div>
     );
 };
